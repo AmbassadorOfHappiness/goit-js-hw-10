@@ -20,8 +20,8 @@ function createMenuMarkup(menu) {
 };
 refs.jsMenu.insertAdjacentHTML('beforeend', menuMarkup);
 
-function changeTheme(e) {
-  if (e.target.checked) {
+function changeTheme(evt) {
+  if (evt.target.checked) {
     refs.body.classList.add(Theme.DARK);
     refs.body.classList.remove(Theme.LIGHT);
     localStorage.setItem('theme', Theme.DARK);

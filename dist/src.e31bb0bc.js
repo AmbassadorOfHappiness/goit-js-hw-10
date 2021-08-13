@@ -2417,8 +2417,8 @@ function createMenuMarkup(menu) {
 ;
 refs.jsMenu.insertAdjacentHTML('beforeend', menuMarkup);
 
-function changeTheme(e) {
-  if (e.target.checked) {
+function changeTheme(evt) {
+  if (evt.target.checked) {
     refs.body.classList.add(Theme.DARK);
     refs.body.classList.remove(Theme.LIGHT);
     localStorage.setItem('theme', Theme.DARK);
@@ -2469,7 +2469,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54512" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52882" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
